@@ -14,6 +14,7 @@ return [
     "medicines" => "Medicines",
     "breeds" => "Breeds",
     "milks" => "Milks",
+    "feeds" => "Feeds",
     "ledgers" => "Ledgers",
     "tags" => "Tags",
     "employees" => "Employees",
