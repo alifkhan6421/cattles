@@ -80,15 +80,15 @@
                         <td>{{ $feed->date }}</td>
                     </tr>
                     <tr>
-                        <th>{{__('feed.morning_amount')}}</th>
+                        <th>{{__('feed.morning_amount')}} (Kg)</th>
                         <td>{{ $feed->morning_amount }}</td>
                     </tr>
                     <tr>
-                        <th>{{__('feed.noon_amount')}}</th>
+                        <th>{{__('feed.noon_amount')}} (Kg)</th>
                         <td>{{ $feed->noon_amount }}</td>
                     </tr>
                     <tr>
-                        <th>{{__('feed.after_noon_amount')}}</th>
+                        <th>{{__('feed.after_noon_amount')}} (Kg)</th>
                         <td>{{ $feed->after_noon_amount }}</td>
                     </tr>
                     <tr>

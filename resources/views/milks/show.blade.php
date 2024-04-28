@@ -80,15 +80,15 @@
                         <td>{{ $milk->date }}</td>
                     </tr>
                     <tr>
-                        <th>{{__('milk.morning_amount')}}</th>
+                        <th>{{__('milk.morning_amount')}} (Liter)</th>
                         <td>{{ $milk->morning_amount }}</td>
                     </tr>
                     <tr>
-                        <th>{{__('milk.noon_amount')}}</th>
+                        <th>{{__('milk.noon_amount')}} (Liter)</th>
                         <td>{{ $milk->noon_amount }}</td>
                     </tr>
                     <tr>
-                        <th>{{__('milk.after_noon_amount')}}</th>
+                        <th>{{__('milk.after_noon_amount')}} (Liter)</th>
                         <td>{{ $milk->after_noon_amount }}</td>
                     </tr>
                     <tr>

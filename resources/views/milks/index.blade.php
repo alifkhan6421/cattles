@@ -154,9 +154,9 @@
                                 <th>{{__('commons.sl')}}</th>
                                 <th>{{__('commons.cow')}}</th>
                                 <th>{{__('commons.date')}}</th>
-                                <th class="text-right">{{__('milk.morning_amount')}}</th>
-                                <th class="text-right">{{__('milk.noon_amount')}}</th>
-                                <th class="text-right">{{__('milk.after_noon_amount')}}</th>
+                                <th class="text-right">{{__('milk.morning_amount')}}  (Liter)</th>
+                                <th class="text-right">{{__('milk.noon_amount')}}  (Liter)</th>
+                                <th class="text-right">{{__('milk.after_noon_amount')}}  (Liter)</th>
                                 <th>{{__('commons.created_by')}}</th>
                                 <th class="text-center mw-100">{{__('commons.action')}}</th>
                             </tr>

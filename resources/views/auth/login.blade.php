@@ -3,6 +3,7 @@
 @section('content')
     <div class="login-box">
         <div class="login-logo">
+            <img src="{{ asset('images/rompin.png') }}" style="max-height:50%; max-width:50%;">
             <a href="{{ url('/') }}"><label style="font-size:20px">Cattle Management System</label></a>
         </div>
 
@@ -60,19 +61,11 @@
         <div class="col-xs-12 text-center">
             <label style="font-size:15px;text-align:center">Powered by Ipinfra IOT</label>
         </div>
+        <div class="login-logo">
+            <img src="{{ asset('images/ipinfra.png') }}" style="max-height:50%; max-width:50%;">
+        </div>
     </div>
-    <div class="col-xs-12">
-        <div class="row">
-            
-            
-            <div class="col-xs-6">
-                <img src="{{ asset('images/ipinfra.png') }}" >
-            </div>
-            <div class="col-xs-6">
-                <img src="{{ asset('images/rompin.png') }}" >
-            </div>
-        </div>
-        </div>
+  
 @endsection
 
 <!-- iCheck -->
