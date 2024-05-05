@@ -16,7 +16,7 @@
     </div>
 
     <div class="col-md-6">
-        <div class="form-group {{ $errors->has('date') ? 'has-error' : '' }}">
+        <div class="form-group">
             <label for="date">{{__('commons.date')}}</label>
             <div class="input-group date">
                 <div class="input-group-addon">
@@ -24,7 +24,7 @@
                 </div>
                 <input class="form-control datepicker pull-right" name="date" id="date"
                        value="{{ old('date', optional($milk)->date) }}"
-                       placeholder="format: {{ config('constants.DISPLAY_DATE_FORMAT') }}" required>
+                       placeholder="format: {{ config('constants.DISPLAY_DATE_FORMAT') }}">
             </div>
 
             {!! $errors->first('date', '<p class="help-block">:message</p>') !!}

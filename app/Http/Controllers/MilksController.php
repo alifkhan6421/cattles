@@ -262,7 +262,7 @@ class MilksController extends Controller
     {
         $data = $request->validate([
             'cattle_id' => 'required',
-            'date' => 'required|date',
+            'date' => 'nullable|date',
             'morning_amount' => 'required|numeric|min:-2147483648|max:2147483647',
             'noon_amount' => 'required|numeric|min:-2147483648|max:2147483647',
             'after_noon_amount' => 'required|numeric|min:-2147483648|max:2147483647',
