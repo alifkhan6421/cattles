@@ -62,6 +62,20 @@
             {!! $errors->first('after_noon_amount', '<p class="help-block">:message</p>') !!}
         </div>
     </div>
+    <div class="col-md-6">
+        <div class="form-group {{ $errors->has('type') ? 'has-error' : '' }}">
+            <label for="type">{{__('commons.type')}}</label>
+            <select class="form-control  select-admin-lte" id="type" name="type" required>
+                <option value="">-----{{__('commons.select')}}-----</option>
+                @foreach (['Normal' => 'Normal', 'Antibiotic' => 'Antibiotic', 'Colostrum' => 'Colostrum'] as $key => $text)
+                    <option value="{{ $key }}" {{ old('type', optional($milk)->type) == $key ? 'selected' : '' }}>
+                        {{ $text }}
+                    </option>
+                @endforeach
+            </select>
+            {!! $errors->first('type', '<p class="help-block">:message</p>') !!}
+        </div>
+    </div>
 
     <div class="col-md-6">
         <div class="form-group {{ $errors->has('comments') ? 'has-error' : '' }}">

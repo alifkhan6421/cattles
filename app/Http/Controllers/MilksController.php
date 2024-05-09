@@ -50,6 +50,10 @@ class MilksController extends Controller
             ]);
         }
 
+        if (!empty($request->type)) {
+            $query->where('type', $request->type);
+        }
+
         if (!empty($request->cattleId)) {
             $query->where('cattle_id', $request->cattleId);
         }
@@ -262,6 +266,7 @@ class MilksController extends Controller
     {
         $data = $request->validate([
             'cattle_id' => 'required',
+            'type' => 'required',
             'date' => 'nullable|date',
             'morning_amount' => 'required|numeric|min:-2147483648|max:2147483647',
             'noon_amount' => 'required|numeric|min:-2147483648|max:2147483647',

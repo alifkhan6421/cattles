@@ -27,6 +27,7 @@ class Milk extends Model
      */
     protected $fillable = [
                   'cattle_id',
+                  'type',
                   'date',
                   'morning_amount',
                   'noon_amount',

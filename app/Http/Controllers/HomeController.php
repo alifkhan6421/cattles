@@ -149,7 +149,8 @@ class HomeController extends Controller
             $barChartLabelss .= '"' . date('F', strtotime("-$is month")) . '"';
 
             $months = date('Y-m', strtotime("-$is month"));
-            $monthlyMilk[] = Milk::where('date', 'like', '%' . $months . '%')
+            $monthlyMilk[] = Milk::where('type', 'Normal')
+                ->where('date', 'like', '%' . $months . '%')
                 ->sum(DB::raw('noon_amount + morning_amount + after_noon_amount'));
 
         }
